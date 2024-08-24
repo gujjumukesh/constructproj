@@ -1,0 +1,387 @@
+/* Global Styles */
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background-image: url('https://www.thespruce.com/thmb/rfuLnm4C2q7IoOpZzSyYeZ8C3Ns=/2022x0/filters:no_upscale():max_bytes(150000):strip_icc()/Firm-handshake-GettyImages-521811101-58db29763df78c5162605f22.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgb(90, 90, 90);
+background-blend-mode: multiply;
+background-position: center;
+color: #fff;
+}
+
+hr {
+border: none;
+border-top: 1px solid #ccc;
+margin: 20px auto;
+}
+
+h1, h3 {
+text-align: center;
+text-transform: uppercase;
+}
+
+h1 {
+position: relative;
+max-width: max-content;
+margin: 2rem auto 5rem auto;
+}
+
+h1::after {
+content: "";
+position: absolute;
+width: 75%;
+height: 5px;
+background-color: lightgreen;
+bottom: -2rem;
+left: 25px;
+}
+
+i {
+font-size: 3rem;
+color: lightgreen;
+padding: 1rem;
+transition: all 0.3s linear;
+transform: rotate(-45deg);
+}
+
+.services-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.service-card {
+cursor: pointer;
+width: 300px;
+margin: 20px;
+padding: 2rem 20px 20px 20px;
+text-align: center;
+border-radius: 5px;
+transition: all 0.3s ease-in-out;
+animation: fadeIn 0.5s;
+}
+
+.icon-container {
+border: 2px solid lightgreen;
+transition: 0.3s linear;
+width: max-content;
+margin: 0 auto;
+transform: rotate(45deg);
+}
+
+.service-card:hover {
+box-shadow: 0 0 30px 0 lightgreen;
+transform: scale(1.1);
+}
+
+.service-card a {
+color: lightgreen;
+text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.service-card {
+    width: 100%;
+}
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 5px auto;
+padding: 0 20px;
+}
+
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+color: #40b736;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+}
+
+.nav-links li {
+margin-right: 20px;
+}
+
+.nav-links a {
+color: rgb(255, 255, 255);
+padding: 10px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.nav-links a:hover {
+background-color: #40b736;
+border-radius: 4px;
+color: white;
+}
+
+.team {
+padding: 30px 0;
+text-align: center;
+}
+
+.team h1 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.team-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 50px;
+margin-top: 20px;
+}
+
+.card {
+background-color: white;
+border-radius: 6px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+overflow: hidden;
+transition: transform 0.2s, box-shadow 0.2s;
+width: 18rem;
+height: 25rem;
+margin-top: 10px;
+animation: fadeIn 0.5s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+width: 18rem;
+height: 12rem;
+}
+
+.card-img img {
+width: 100%;
+height: 100%;
+object-fit: fill;
+}
+
+.card-info button {
+margin: 2rem 1rem;
+background-color: #40b736;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+animation: pulse 2s infinite;
+}
+
+.card-info button:hover {
+background-color: #1f9405;
+}
+
+@keyframes pulse {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(1);
+}
+}
+
+footer {
+background-color: #222;
+color: white;
+text-align: center;
+padding: 20px 0;
+animation: fadeIn 0.5s;
+}
+
+.service-card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 5px 5px 0 0;
+margin-bottom: 20px;
+animation: fadeIn 0.5s;
+}
+
+button {
+border: none;
+outline: 0;
+padding: 10px;
+margin: 2rem;
+font-size: 1rem;
+color: white;
+background-color: #40b736;
+text-align: center;
+cursor: pointer;
+width: 15rem;
+border-radius: 4px;
+animation: pulse 2s infinite;
+}
+
+button:hover {
+background-color: #1f9405;
+}
+
+.about {
+background: rgb(224, 251, 222);
+background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+padding: 100px 0 20px 0;
+text-align: center;
+animation: fadeIn 0.5s;
+}
+
+.about h1 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+animation: fadeIn 0.5s;
+}
+
+.about p {
+font-size: 1rem;
+color: #323030;
+max-width: 800px;
+margin: 0 auto;
+animation: fadeIn 0.5s;
+}
+
+.about-info {
+margin: 2rem 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: left;
+animation: fadeIn 0.5s;
+}
+
+.about-img {
+width: 20rem;
+height: 20rem;
+animation: fadeIn 0.5s;
+}
+
+.about-img img {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+object-fit: contain;
+animation: fadeIn 0.5s;
+}
+
+.about-info p {
+font-size: 1.3rem;
+margin: 0 2rem;
+text-align: justify;
+animation: fadeIn 0.5s;
+}
+
+@media (max-width: 768px) {
+nav {
+    display: block;
+}
+
+.logo {
+    text-align: center;
+}
+
+.nav-links {
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    margin-right: 0;
+}
+
+.about h1 {
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 0.9rem;
+}
+
+.about-info {
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 1rem;
+}
+
+.about-info p {
+    margin: 1rem 2rem;
+}
+
+.about-info button {
+    margin: 1rem 2rem;
+    width: 10rem;
+}
+
+.team {
+    margin: 0 1rem;
+}
+}
+
+@media (max-width: 480px) {
+.team-cards {
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.about-info {
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-img {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 1rem;
+}
+
+.about-info p {
+    margin: 1rem 2rem;
+}
+
+.about-info button {
+    margin: 1rem 2rem;
+    width: 10rem;
+}
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
